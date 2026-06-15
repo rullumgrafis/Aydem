@@ -1,4 +1,4 @@
-@extends('shared.base', ['title' => 'Blog'])
+@extends('shared.base', ['title' => 'rullumgrafis'])
 
 
 

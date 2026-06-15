@@ -1,4 +1,4 @@
-@extends('shared.base', ['title' => 'Aydem - TailwindCSS HTML website template'])
+@extends('shared.base', ['title' => 'rullumgrafis'])
 
 
 
@@ -15,7 +15,7 @@
             <div
                 class="relative z-10 flex flex-col overflow-hidden md:gap-20 gap-10 bg-[linear-gradient(137deg,var(--color-secondary),var(--color-primary)_23%)] md:pt-7.5 md:px-11.25 pt-4 px-6">
                 <div class="grid grid-cols-2 gap-2.5 items-center">
-                    <img alt="Aydem Image" class="rounded-4xl" src="{{ asset('images/avatar/ulum.jpg') }}"/>
+                    <img alt="rullumgrafis Image" class="rounded-4xl" src="{{ asset('images/avatar/ulum.jpg') }}"/>
                     <div class="flex flex-col text-end gap-1.5">
                         <img alt="Globe Icon" class="w-9.75 h-7.5 ms-auto" src="{{ asset('images/svg/globe-1.svg') }}"/>
                         <div class="flex flex-col gap-0.5">
