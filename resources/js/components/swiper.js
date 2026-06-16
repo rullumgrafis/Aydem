@@ -6,11 +6,10 @@
 
 
 
-import Swiper from 'swiper/bundle';
+import Swiper from "swiper/bundle";
 
 export default (() => {
-
-    const workSwiper = new Swiper('.work-swiper', {
+    const workSwiper = new Swiper(".work-swiper", {
         loop: true,
         speed: 800,
         slidesPerView: "auto",
@@ -19,9 +18,8 @@ export default (() => {
         allowTouchMove: false,
 
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: ".work-next",
+            prevEl: ".work-prev",
         },
-    })
-
-})()
+    });
+})();

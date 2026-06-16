@@ -41,7 +41,7 @@
                             <div class="flex items-center gap-2.5 rounded-xl bg-body-bg text-white py-3 px-5.5">
                                 <img alt="Calendar Icon" class="size-3.5" loading="eager"
                                      src="{{ asset('images/svg/calendar.svg') }}"/>
-                                <div class="font-medium">Schedule a call</div>
+                                <div class="font-medium">Let's Collaborate</div>
                             </div>
                         </a>
                     </div>
@@ -119,178 +119,262 @@
     </div>
 </section>
     <!-- Work / Portfolio Section -->
-    <section class="lg:pt-37.5 md:pt-25 pt-12 overflow-hidden" id="work">
-        <div class="container-small">
-            <div class="lg:w-150 w-auto mx-auto flex justify-between items-center mb-12.5">
-                <h2 class="lg:text-4xl md:text-[32px] text-2xl text-white">Work Showcase</h2>
+<section class="lg:pt-37.5 md:pt-25 pt-12 overflow-hidden" id="work">
+    <div class="container-small">
+
+        <!-- Header -->
+        <div class="lg:w-150 w-auto mx-auto">
+            <div class="flex justify-between items-center mb-5">
+                <h2 class="lg:text-4xl md:text-[32px] text-2xl text-white">
+                    Work Showcase
+                </h2>
+
                 <div class="flex gap-5">
                     <button
-                        class="swiper-button-prev static! flex justify-center items-center size-10! bg-default-900 rounded-xl">
-                        <i class="iconify lucide--chevron-left text-white size-6"></i>
+                        class="work-prev iconify lucide--chevron-left text-white size-6">
                     </button>
+
                     <button
-                        class="swiper-button-next static! flex justify-center items-center size-10! bg-default-900 rounded-xl">
-                        <i class="iconify lucide--chevron-right text-white size-6"></i>
+                        class="work-next iconify lucide--chevron-right text-white size-6">
                     </button>
                 </div>
             </div>
-            <!-- Swiper -->
-            <div class="swiper work-swiper lg:overflow-visible!">
-                <div class="swiper-wrapper">
-                    <!-- Work Card 1 -->
-                    <div class="swiper-slide">
-                        <a class="group" href="{{ url('/work') }}">
-                            <div class="flex flex-col gap-2 p-2 bg-default-900 rounded-md">
-                                <div class="relative overflow-hidden">
-                                    <img alt=""
-                                         class="rounded-md group-hover:blur-sm transition-all duration-700 overflow-hidden"
-                                         src="{{ asset('images/work/01.png') }}"/>
-                                    <div
-                                        class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-primary py-3 px-5.5 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2 transition-all duration-700">
-                                        View Project
-                                    </div>
-                                </div>
+
+            <!-- Detail -->
+<div class="mb-12">
+    <p class="text-white/60 text-base md:text-lg leading-relaxed max-w-3xl mb-5">
+        Berikut beberapa project yang telah saya kerjakan, mulai dari
+        pengembangan website company profile, sistem informasi,
+        aplikasi berbasis web, hingga desain UI/UX yang berfokus
+        pada performa, pengalaman pengguna, dan kebutuhan bisnis.
+    </p>
+
+<a href="{{ url('https://www.behance.net/rullumgrafis') }}"
+   class="inline-flex items-center gap-2 text-primary hover:text-white transition">
+    View Portfolio
+</a>
+</div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper work-swiper lg:overflow-visible!">
+            <div class="swiper-wrapper">
+
+                <!-- Work Card 1 -->
+                <div class="swiper-slide">
+                    <a class="group" href="{{ url('/work') }}">
+                        <div class="flex flex-col gap-2 p-2 bg-default-900 rounded-md">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    src="{{ asset('images/work/01.png') }}"
+                                    alt=""
+                                    class="rounded-md group-hover:blur-sm transition-all duration-700">
+
                                 <div
-                                    class="p-2 gap-4 flex justify-between text-white/70 group-hover:text-white/50 transition-all duration-700">
-                                    <div class="text-lg">Brandora - Creative Agency Website</div>
-                                    <div class="flex items-center gap-2.5">
-                                        <div
-                                            class="bg-white/70 group-hover:bg-white/50 flex justify-center items-center rounded-full size-1.25 transition-all duration-700"></div>
-                                        <div>UI/UX design</div>
-                                    </div>
+                                    class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-primary py-3 px-5.5 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2 transition-all duration-700">
+                                    View Project
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <!-- Work Card 2 -->
-                    <div class="swiper-slide">
-                        <a class="group" href="{{ url('/work') }}">
-                            <div class="flex flex-col gap-2 p-2 bg-default-900 rounded-md">
-                                <div class="relative overflow-hidden">
-                                    <img alt=""
-                                         class="rounded-md group-hover:blur-sm transition-all duration-700 overflow-hidden"
-                                         src="{{ asset('images/work/01.png') }}"/>
-                                    <div
-                                        class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-primary py-3 px-5.5 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2 transition-all duration-700">
-                                        View Project
-                                    </div>
+
+                            <div
+                                class="p-2 gap-4 flex justify-between text-white/70 group-hover:text-white/50 transition-all duration-700">
+
+                                <div class="text-lg">
+                                    Brandora - Creative Agency Website
                                 </div>
-                                <div
-                                    class="p-2 gap-4 flex justify-between text-white/70 group-hover:text-white/50 transition-all duration-700">
-                                    <div class="text-lg">Brandora - Creative Agency Website</div>
-                                    <div class="flex items-center gap-2.5">
-                                        <div
-                                            class="bg-white/70 group-hover:bg-white/50 flex justify-center items-center rounded-full size-1.25 transition-all duration-700"></div>
-                                        <div>UI/UX design</div>
+
+                                <div class="flex items-center gap-2.5">
+                                    <div
+                                        class="bg-white/70 group-hover:bg-white/50 flex justify-center items-center rounded-full size-1.25 transition-all duration-700">
                                     </div>
+
+                                    <div>UI/UX Design</div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <!-- Work Card 3 -->
-                    <div class="swiper-slide">
-                        <a class="group" href="{{ url('/work') }}">
-                            <div class="flex flex-col gap-2 p-2 bg-default-900 rounded-md">
-                                <div class="relative overflow-hidden">
-                                    <img alt=""
-                                         class="rounded-md group-hover:blur-sm transition-all duration-700 overflow-hidden"
-                                         src="{{ asset('images/work/01.png') }}"/>
-                                    <div
-                                        class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-primary py-3 px-5.5 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2 transition-all duration-700">
-                                        View Project
-                                    </div>
-                                </div>
-                                <div
-                                    class="p-2 gap-4 flex justify-between text-white/70 group-hover:text-white/50 transition-all duration-700">
-                                    <div class="text-lg">Brandora - Creative Agency Website</div>
-                                    <div class="flex items-center gap-2.5">
-                                        <div
-                                            class="bg-white/70 group-hover:bg-white/50 flex justify-center items-center rounded-full size-1.25 transition-all duration-700"></div>
-                                        <div>UI/UX design</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Work Card 4 -->
-                    <div class="swiper-slide">
-                        <a class="group" href="{{ url('/work') }}">
-                            <div class="flex flex-col gap-2 p-2 bg-default-900 rounded-md">
-                                <div class="relative overflow-hidden">
-                                    <img alt=""
-                                         class="rounded-md group-hover:blur-sm transition-all duration-700 overflow-hidden"
-                                         src="{{ asset('images/work/01.png') }}"/>
-                                    <div
-                                        class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-primary py-3 px-5.5 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2 transition-all duration-700">
-                                        View Project
-                                    </div>
-                                </div>
-                                <div
-                                    class="p-2 gap-4 flex justify-between text-white/70 group-hover:text-white/50 transition-all duration-700">
-                                    <div class="text-lg">Brandora - Creative Agency Website</div>
-                                    <div class="flex items-center gap-2.5">
-                                        <div
-                                            class="bg-white/70 group-hover:bg-white/50 flex justify-center items-center rounded-full size-1.25 transition-all duration-700"></div>
-                                        <div>UI/UX design</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Work Card 5 -->
-                    <div class="swiper-slide">
-                        <a class="group" href="{{ url('/work') }}">
-                            <div class="flex flex-col gap-2 p-2 bg-default-900 rounded-md">
-                                <div class="relative overflow-hidden">
-                                    <img alt=""
-                                         class="rounded-md group-hover:blur-sm transition-all duration-700 overflow-hidden"
-                                         src="{{ asset('images/work/01.png') }}"/>
-                                    <div
-                                        class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-primary py-3 px-5.5 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2 transition-all duration-700">
-                                        View Project
-                                    </div>
-                                </div>
-                                <div
-                                    class="p-2 gap-4 flex justify-between text-white/70 group-hover:text-white/50 transition-all duration-700">
-                                    <div class="text-lg">Brandora - Creative Agency Website</div>
-                                    <div class="flex items-center gap-2.5">
-                                        <div
-                                            class="bg-white/70 group-hover:bg-white/50 flex justify-center items-center rounded-full size-1.25 transition-all duration-700"></div>
-                                        <div>UI/UX design</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- Work Card 6 -->
-                    <div class="swiper-slide">
-                        <a class="group" href="{{ url('/work') }}">
-                            <div class="flex flex-col gap-2 p-2 bg-default-900 rounded-md">
-                                <div class="relative overflow-hidden">
-                                    <img alt=""
-                                         class="rounded-md group-hover:blur-sm transition-all duration-700 overflow-hidden"
-                                         src="{{ asset('images/work/01.png') }}"/>
-                                    <div
-                                        class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-primary py-3 px-5.5 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2 transition-all duration-700">
-                                        View Project
-                                    </div>
-                                </div>
-                                <div
-                                    class="p-2 gap-4 flex justify-between text-white/70 group-hover:text-white/50 transition-all duration-700">
-                                    <div class="text-lg">Brandora - Creative Agency Website</div>
-                                    <div class="flex items-center gap-2.5">
-                                        <div
-                                            class="bg-white/70 group-hover:bg-white/50 flex justify-center items-center rounded-full size-1.25 transition-all duration-700"></div>
-                                        <div>UI/UX design</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
+
+                <!-- Work Card 2 -->
+                <div class="swiper-slide">
+                    <a class="group" href="{{ url('/work') }}">
+                        <div class="flex flex-col gap-2 p-2 bg-default-900 rounded-md">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    src="{{ asset('images/work/01.png') }}"
+                                    alt=""
+                                    class="rounded-md group-hover:blur-sm transition-all duration-700">
+
+                                <div
+                                    class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-primary py-3 px-5.5 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2 transition-all duration-700">
+                                    View Project
+                                </div>
+                            </div>
+
+                            <div
+                                class="p-2 gap-4 flex justify-between text-white/70 group-hover:text-white/50 transition-all duration-700">
+
+                                <div class="text-lg">
+                                    E-Commerce Dashboard
+                                </div>
+
+                                <div class="flex items-center gap-2.5">
+                                    <div
+                                        class="bg-white/70 group-hover:bg-white/50 rounded-full size-1.25">
+                                    </div>
+
+                                    <div>Web Development</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Work Card 3 -->
+                <div class="swiper-slide">
+                    <a class="group" href="{{ url('/work') }}">
+                        <div class="flex flex-col gap-2 p-2 bg-default-900 rounded-md">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    src="{{ asset('images/work/01.png') }}"
+                                    alt=""
+                                    class="rounded-md group-hover:blur-sm transition-all duration-700">
+
+                                <div
+                                    class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-primary py-3 px-5.5 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2 transition-all duration-700">
+                                    View Project
+                                </div>
+                            </div>
+
+                            <div
+                                class="p-2 gap-4 flex justify-between text-white/70 group-hover:text-white/50 transition-all duration-700">
+
+                                <div class="text-lg">
+                                    Company Profile Website
+                                </div>
+
+                                <div class="flex items-center gap-2.5">
+                                    <div
+                                        class="bg-white/70 group-hover:bg-white/50 rounded-full size-1.25">
+                                    </div>
+
+                                    <div>Frontend</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Work Card 4 -->
+                <div class="swiper-slide">
+                    <a class="group" href="{{ url('/work') }}">
+                        <div class="flex flex-col gap-2 p-2 bg-default-900 rounded-md">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    src="{{ asset('images/work/01.png') }}"
+                                    alt=""
+                                    class="rounded-md group-hover:blur-sm transition-all duration-700">
+
+                                <div
+                                    class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-primary py-3 px-5.5 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2 transition-all duration-700">
+                                    View Project
+                                </div>
+                            </div>
+
+                            <div
+                                class="p-2 gap-4 flex justify-between text-white/70 group-hover:text-white/50 transition-all duration-700">
+
+                                <div class="text-lg">
+                                    HR Management System
+                                </div>
+
+                                <div class="flex items-center gap-2.5">
+                                    <div
+                                        class="bg-white/70 group-hover:bg-white/50 rounded-full size-1.25">
+                                    </div>
+
+                                    <div>Laravel</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Work Card 5 -->
+                <div class="swiper-slide">
+                    <a class="group" href="{{ url('/work') }}">
+                        <div class="flex flex-col gap-2 p-2 bg-default-900 rounded-md">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    src="{{ asset('images/work/01.png') }}"
+                                    alt=""
+                                    class="rounded-md group-hover:blur-sm transition-all duration-700">
+
+                                <div
+                                    class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-primary py-3 px-5.5 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2 transition-all duration-700">
+                                    View Project
+                                </div>
+                            </div>
+
+                            <div
+                                class="p-2 gap-4 flex justify-between text-white/70 group-hover:text-white/50 transition-all duration-700">
+
+                                <div class="text-lg">
+                                    POS Application
+                                </div>
+
+                                <div class="flex items-center gap-2.5">
+                                    <div
+                                        class="bg-white/70 group-hover:bg-white/50 rounded-full size-1.25">
+                                    </div>
+
+                                    <div>Full Stack</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Work Card 6 -->
+                <div class="swiper-slide">
+                    <a class="group" href="{{ url('/work') }}">
+                        <div class="flex flex-col gap-2 p-2 bg-default-900 rounded-md">
+                            <div class="relative overflow-hidden">
+                                <img
+                                    src="{{ asset('images/work/01.png') }}"
+                                    alt=""
+                                    class="rounded-md group-hover:blur-sm transition-all duration-700">
+
+                                <div
+                                    class="absolute top-1/2 start-1/2 -translate-x-1/2 -translate-y-1/2 rounded-xl bg-primary py-3 px-5.5 opacity-0 group-hover:opacity-100 group-hover:translate-y-1/2 transition-all duration-700">
+                                    View Project
+                                </div>
+                            </div>
+
+                            <div
+                                class="p-2 gap-4 flex justify-between text-white/70 group-hover:text-white/50 transition-all duration-700">
+
+                                <div class="text-lg">
+                                    Inventory Management
+                                </div>
+
+                                <div class="flex items-center gap-2.5">
+                                    <div
+                                        class="bg-white/70 group-hover:bg-white/50 rounded-full size-1.25">
+                                    </div>
+
+                                    <div>Backend</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
-    </section>
+
+    </div>
+</section>
     <!-- About Section -->
     <section class="lg:py-37.5 md:py-25 py-12" id="about">
         <div class="inner-container-small">

@@ -101,7 +101,7 @@ if ($sort === 'free') {
     <!-- BACKGROUND -->
     <div class="absolute inset-0 -z-10 overflow-hidden">
 
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-yellow-400/10 blur-3xl rounded-full"></div>
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-green-400/10 blur-3xl rounded-full"></div>
 
         <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-500/10 blur-3xl rounded-full"></div>
 
@@ -112,14 +112,14 @@ if ($sort === 'free') {
         <!-- HERO -->
         <div class="text-center max-w-5xl mx-auto mb-20">
 
-            <span class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-yellow-400/20 bg-yellow-400/10 text-yellow-300 text-sm font-medium mb-6">
+            <span class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-green-400/20 bg-green-400/10 text-green-300 text-sm font-medium mb-6">
                 ✨ Premium Digital Resources
             </span>
 
             <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-6">
 
                 Elevate Your
-                <span class="text-yellow-400">
+                <span class="text-green-400">
                     Creative Workflow
                 </span>
 
@@ -148,7 +148,7 @@ if ($sort === 'free') {
                         name="search"
                         value="{{ $search }}"
                         placeholder="Search premium assets..."
-                        class="w-full h-14 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl px-5 pr-24 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-yellow-400 transition duration-300">
+                        class="w-full h-14 bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl px-5 pr-24 text-sm text-white placeholder:text-gray-500 focus:outline-none focus:border-green-400 transition duration-300">
 
                     <div class="absolute top-1/2 right-4 -translate-y-1/2 flex items-center gap-3">
 
@@ -166,7 +166,7 @@ if ($sort === 'free') {
 
                         <button
                             type="submit"
-                            class="text-gray-400 hover:text-yellow-400 transition">
+                            class="text-gray-400 hover:text-green-400 transition"">
 
                             🔍
 
@@ -180,7 +180,7 @@ if ($sort === 'free') {
                 <select
                     name="sort"
                     onchange="this.form.submit()"
-                    class="h-14 px-4 rounded-2xl bg-white/5 border border-white/10 text-white text-sm focus:outline-none">
+                    class="h-14 px-5 rounded-2xl bg-zinc-900 border border-zinc-700 text-white hover:border-green-400 focus:border-green-400 focus:ring-2 focus:ring-green-400/20 transition-all duration-200 text-sm font-medium outline-none">
 
                     <option value="latest" {{ $sort === 'latest' ? 'selected' : '' }}>
                         Latest
@@ -209,8 +209,8 @@ if ($sort === 'free') {
                     ]) }}"
                     class="px-5 py-2 rounded-full text-sm font-medium transition-all duration-300
                     {{ trim($category) === trim($item)
-                        ? 'bg-yellow-400 text-black shadow-lg shadow-yellow-400/20'
-                        : 'bg-white/5 border border-white/10 text-gray-300 hover:border-yellow-400 hover:text-white'
+                        ? 'bg-green-400 text-black shadow-lg shadow-green-400/20'
+                        : 'bg-white/5 border border-white/10 text-gray-300 hover:border-green-400 hover:text-white'
                     }}">
 
                     {{ $item }}
@@ -234,7 +234,7 @@ if ($sort === 'free') {
            bg-[#111]
            border border-white/10
            transition-all duration-300
-           hover:border-yellow-400/30
+          hover:border-green-400/30
            hover:-translate-y-2
            hover:shadow-2xl hover:shadow-yellow-400/10">
 
@@ -269,13 +269,13 @@ if ($sort === 'free') {
     <div class="p-4">
 
         <span
-            class="inline-flex items-center px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[#d6b37a] text-[10px] font-medium mb-3">
+            class="inline-flex items-center px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-green-400 text-[10px] font-medium mb-3">
 
             {{ $product['category'] }}
 
         </span>
 
-        <h3 class="text-white text-sm font-bold leading-snug mb-4 line-clamp-2 min-h-[40px] group-hover:text-yellow-400 transition">
+        <h3 class="text-white text-sm font-bold leading-snug mb-4 line-clamp-2 min-h-[40px]">
 
             {{ $product['title'] }}
 

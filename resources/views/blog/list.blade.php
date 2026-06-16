@@ -43,87 +43,163 @@
             </div>
         </div>
     </section>
-    <section class="lg:pb-37.5 md:pb-25 pb-12 pt-20">
-        <div class="inner-container-small">
-            <div class="flex flex-col gap-5">
-                <a href="/blog/dark-mode-isnt-just-a-trend--its-smart-ux">
-                    <div class="md:p-5 p-4 flex flex-col gap-5 bg-default-900 rounded-lg group">
-                        <div class="overflow-hidden lg:h-75 h-auto rounded-lg">
-                            <img alt=""
-                                 class="rounded-lg group-hover:scale-105 transition-all duration-700 overflow-hidden"
-                                 src="{{ asset('images/blog/blog-1.png') }}"/>
-                        </div>
-                        <div class="flex flex-col gap-2.5">
-                            <div class="flex gap-2.5 items-center">
-                                <div
-                                    class="bg-body-bg rounded-md py-1.25 px-2.5 text-white/70 group-hover:text-white/50 transition-all duration-700">
-                                    UX/UI Design
-                                </div>
-                                <div class="text-white/70 group-hover:text-white/50 transition-all duration-500">October
-                                    11, 2025
-                                </div>
-                            </div>
-                            <h2 class="md:text-xl text-base text-white">Dark Mode Isn't Just a Trend—It's Smart UX</h2>
-                        </div>
-                    </div>
-                </a>
-                <a href="/blog/dark-mode-isnt-just-a-trend--its-smart-ux">
-                    <div class="md:p-5 p-4 flex flex-col gap-5 bg-default-900 rounded-lg group">
-                        <div class="overflow-hidden lg:h-75 h-auto rounded-lg">
-                            <img alt=""
-                                 class="rounded-lg group-hover:scale-105 transition-all duration-700 overflow-hidden"
-                                 src="{{ asset('images/blog/blog-2.png') }}"/>
-                        </div>
-                        <div class="flex flex-col gap-2.5">
-                            <div class="flex gap-2.5 items-center">
-                                <div
-                                    class="bg-body-bg rounded-md py-1.25 px-2.5 text-white/70 group-hover:text-white/50 transition-all duration-700">
-                                    No-Code
-                                </div>
-                                <div class="text-white/70 group-hover:text-white/50 transition-all duration-500">October
-                                    15, 2025
-                                </div>
-                            </div>
-                            <h2 class="md:text-xl text-base text-white">How to Build a Scalable Portfolio Site with
-                                Tailwind</h2>
-                        </div>
-                    </div>
-                </a>
-                <a href="/blog/dark-mode-isnt-just-a-trend--its-smart-ux">
-                    <div class="md:p-5 p-4 flex flex-col gap-5 bg-default-900 rounded-lg group">
-                        <div class="overflow-hidden lg:h-75 h-auto rounded-lg">
-                            <img alt=""
-                                 class="rounded-lg group-hover:scale-105 transition-all duration-700 overflow-hidden"
-                                 src="{{ asset('images/blog/blog-3.png') }}"/>
-                        </div>
-                        <div class="flex flex-col gap-2.5">
-                            <div class="flex gap-2.5 items-center">
-                                <div
-                                    class="bg-body-bg rounded-md py-1.25 px-2.5 text-white/70 group-hover:text-white/50 transition-all duration-700">
-                                    Development
-                                </div>
-                                <div class="text-white/70 group-hover:text-white/50 transition-all duration-500">October
-                                    11, 2025
-                                </div>
-                            </div>
-                            <h2 class="md:text-xl text-base text-white">My favorite tools for Full-Stack development in
-                                2025</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="pt-5 grid grid-cols-3 gap-4 items-center justify-between">
-                <div></div>
-                <div class="text-lg text-white/70 text-center">1 / 2</div>
-                <button class="rounded-lg p-0.75 bg-white/30">
-                    <div class="bg-white flex gap-2.5 items-center justify-center rounded-lg py-3 px-5.5">
-                        <div class="w-inline-block">Next</div>
-                        <i class="iconify lucide--chevron-right size-4"></i>
-                    </div>
-                </button>
+    ```blade
+<section class="lg:pb-37.5 md:pb-25 pb-12 pt-20">
+    <div class="inner-container-small">
+
+        <div class="mb-12">
+
+            <!-- Search -->
+            <div class="max-w-2xl">
+                <div class="relative">
+                    <i class="iconify lucide--search absolute left-5 top-1/2 -translate-y-1/2 text-white/40 text-xl"></i>
+
+                    <input
+                        type="text"
+                        placeholder="Looking for articles..."
+                        class="w-full h-14 pl-14 pr-5 rounded-full bg-white/5 border border-white/10 text-white placeholder:text-white/40 focus:outline-none focus:border-green-400 transition-all duration-300"
+                    >
+                </div>
             </div>
         </div>
-    </section>
+
+        <!-- Blog List -->
+        <div class="flex flex-col gap-6">
+
+            <!-- Blog Item 1 -->
+            <a href="/blog/detail" onclick="openBlogModal()">
+                <article class="group bg-default-900 rounded-2xl border border-white/5 hover:border-white/10 overflow-hidden transition-all duration-300">
+
+                    <div class="overflow-hidden">
+                        <img
+                            src="{{ asset('images/blog/blog-1.png') }}"
+                            alt="Dark Mode"
+                            class="w-full group-hover:scale-105 transition-all duration-700"
+                        >
+                    </div>
+
+                    <div class="p-5 flex flex-col gap-3">
+
+                        <div class="flex items-center gap-3 text-sm">
+
+                            <span class="bg-body-bg rounded-lg px-3 py-1.5 text-white/70">
+                                UX/UI Design
+                            </span>
+
+                            <span class="text-white/50">
+                                October 11, 2025
+                            </span>
+
+                        </div>
+
+                        <h2 class="text-xl font-semibold text-white group-hover:text-green-400 transition-all">
+                            Dark Mode Isn't Just a Trend—It's Smart UX
+                        </h2>
+
+                    </div>
+                </article>
+            </a>
+
+            <!-- Blog Item 2 -->
+            <a href="/blog/how-to-build-a-scalable-portfolio-site-with-tailwind">
+                <article class="group bg-default-900 rounded-2xl border border-white/5 hover:border-white/10 overflow-hidden transition-all duration-300">
+
+                    <div class="overflow-hidden">
+                        <img
+                            src="{{ asset('images/blog/blog-2.png') }}"
+                            alt="Tailwind"
+                            class="w-full group-hover:scale-105 transition-all duration-700"
+                        >
+                    </div>
+
+                    <div class="p-5 flex flex-col gap-3">
+
+                        <div class="flex items-center gap-3 text-sm">
+
+                            <span class="bg-body-bg rounded-lg px-3 py-1.5 text-white/70">
+                                No-Code
+                            </span>
+
+                            <span class="text-white/50">
+                                October 15, 2025
+                            </span>
+
+                        </div>
+
+                        <h2 class="text-xl font-semibold text-white group-hover:text-green-400 transition-all">
+                            How to Build a Scalable Portfolio Site with Tailwind
+                        </h2>
+
+                    </div>
+                </article>
+            </a>
+
+            <!-- Blog Item 3 -->
+            <a href="/blog/my-favorite-tools-for-full-stack-development">
+                <article class="group bg-default-900 rounded-2xl border border-white/5 hover:border-white/10 overflow-hidden transition-all duration-300">
+
+                    <div class="overflow-hidden">
+                        <img
+                            src="{{ asset('images/blog/blog-3.png') }}"
+                            alt="Development"
+                            class="w-full group-hover:scale-105 transition-all duration-700"
+                        >
+                    </div>
+
+                    <div class="p-5 flex flex-col gap-3">
+
+                        <div class="flex items-center gap-3 text-sm">
+
+                            <span class="bg-body-bg rounded-lg px-3 py-1.5 text-white/70">
+                                Development
+                            </span>
+
+                            <span class="text-white/50">
+                                October 20, 2025
+                            </span>
+
+                        </div>
+
+                        <h2 class="text-xl font-semibold text-white group-hover:text-green-400 transition-all">
+                            My Favorite Tools for Full-Stack Development in 2025
+                        </h2>
+
+                    </div>
+                </article>
+            </a>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-12 flex items-center justify-between border-t border-white/10 pt-8">
+
+    <div class="flex items-center gap-3">
+
+        <button class="w-10 h-10 rounded-lg bg-white text-black font-medium">
+            1
+        </button>
+
+        <button class="w-10 h-10 rounded-lg text-white/60 hover:text-white">
+            2
+        </button>
+
+        <button class="w-10 h-10 rounded-lg text-white/60 hover:text-white">
+            3
+        </button>
+
+    </div>
+
+    <button class="group flex items-center gap-2 px-6 py-3 rounded-xl bg-white text-black font-medium">
+        Next
+        <i class="iconify lucide--arrow-right transition-transform group-hover:translate-x-1"></i>
+    </button>
+
+</div>
+
+    </div>
+</section>
+```
+
 
     @include('shared.partials.footer')
 @endsection
